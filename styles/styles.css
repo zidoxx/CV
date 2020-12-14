@@ -234,7 +234,27 @@ body {
 /* PORTAFOLIO */
 
 .img__porfolio img {
-    margin-left: 30px;
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    width: 100%;
     height: auto;
+}
+
+.description__portfolio {
+    padding: 40px;
+}
+
+@media screen and (max-width: 375px) {
+    .img__porfolio img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 15px;
+    }
+
+    .description__portfolio {
+        padding: 20px;
+    }
 }
