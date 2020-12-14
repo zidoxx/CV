@@ -6,6 +6,7 @@
     --white: #ffffff;
     --gray: #dfdfdf;
     --text: #34373b;
+    --links: #009865;
 }
 
 * {
@@ -16,6 +17,11 @@
 
 body {
     background: var(--gray);
+}
+
+a {
+    text-decoration: none;
+    color: var(--links);
 }
 
 .background-white {
@@ -32,6 +38,7 @@ body {
     display: flex;
     background-color: var(--header);
     color: var(--white);
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
     padding-left: 0;
 }
 
@@ -56,6 +63,11 @@ body {
 }
 
 @media (max-width: 768px) {
+    .topm {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
     .header {
         display: flex;
         justify-content: center;
