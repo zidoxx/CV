@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+
+:root {
+    /* #489258 */
+    --header: #00ba80;
+    --white: #ffffff;
+    --gray: #dfdfdf;
+    --text: #34373b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gray);
+}
+
+.background-white {
+    background-color: var(--white);
+    padding: 0;
+}
+
+.topm {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    background-color: var(--header);
+    color: var(--white);
+    padding-left: 0;
+}
+
+.header-img {
+    width: 220px;
+    height: 220px;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-img {
+        border-radius: 50%;
+        width: 190px;
+        height: 190px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-img {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .head-information {
+        display: flex;
+        align-items: start;
+        width: 70%;
+    }
+
+    .head-name {
+        text-align: center;
+    }
+}
+
+.head-information {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 20px 20px;
+    line-height: 2;
+}
+
+.head-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.head-career {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.head-links {
+    color: var(--gray);
+}
+
+.head-links i {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.head-ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.head-ul-links {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 20px 20px;
+    line-height: 2.5;
+    list-style: none;
+}
+
+.head-ul-links li i {
+    font-size: 25px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.head-ul-links li a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+@media (max-width: 1000px) {
+    .head-ul-links {
+        margin: 0 auto;
+    }
+}
+
+/* Resume section */
+
+.summary {
+    padding: 0 50px 50px;
+    border-radius: 0px 25px 0px 25px;
+}
+
+.resume-title {
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 25px;
+}
+
+.job-resume::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    background: var(--header);
+    left: -20px;
+    top: 3px;
+    position: absolute;
+}
+
+.job-time {
+    color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 10px;
+}
+
+.job a {
+    text-decoration: none;
+    color: rgba(0, 50, 0, 0.7);
+}
+
+.pseudo::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -26px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    border: 4px solid var(--header);
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.technologies-used {
+    padding-bottom: 50px;
+}
+
+.skils-title {
+    padding-top: 15px;
+}
+
+.sidebar h5 {
+    font-weight: 700;
+}
+
+.sidebar p {
+    margin: 5px 0 2px 0;
+}
+
+.divider {
+    background: var(--header);
+}
+
+.others {
+    padding-top: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+.section h6 > p {
+    display: inline-block;
+    flex-direction: column;
+    color: rgba(0, 50, 0, 0.7);
+}
+
+/* footer */
+.footer {
+    padding-bottom: 40px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--header);
+    font-weight: 500;
+}
+
+/* PORTAFOLIO */
+
+.img__porfolio img {
+    margin-left: 30px;
+    width: 90%;
+    height: auto;
+}
